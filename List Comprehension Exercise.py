@@ -42,20 +42,6 @@ for i in original_list:
 #The * operator is used to repeat. The filter part answers the question if the
 #item should be transformed. '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Exercise ##
 
 # 1 Using a list comprehension, create a new list called "newlist" out of the list "numbers", 
@@ -66,7 +52,6 @@ numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 newlist = [i for i in numbers if i>0]
 print(newlist)
 
-
 ## 2 create a list of integers which specify the length of each word in
 ## a sentence except for the word 'the'
 
@@ -75,7 +60,6 @@ words = sentence.split()
 
 string = [len(i) for i in words if i!='the']
 print(string)
-
 
 ## Given dictionary is consisted of vehicles and their weights in kilograms. 
 ## Contruct a list of the names of vehicles with weight below 5000 kilograms. 

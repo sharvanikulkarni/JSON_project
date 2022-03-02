@@ -63,21 +63,14 @@ print(x)
 new_list = [i**2 for i in old_list]
 print(new_list)
 
-
-
-
 # Output -[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-
-
-
 
 #2) creating a list that evaluates an expression
 
 squares = [x**2 for x in range(10)]
 print(squares)
-# Output -[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
+# Output -[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 #3) creating a list from another list
 
@@ -87,8 +80,6 @@ print(multiplied)
 
 #[9,12,15]
 
-
-
 # 4) using list comprehension for string manipulation
 
 listofwords = ["this",'is', 'a', 'list', 'of', 'words']
@@ -97,22 +88,15 @@ print(items)
 
 # Output - ['t', 'i', 'a', 'l', 'o', 'w']
 
-
-
 # 5) Let's show how easy you can convert lower case / upper case letters.
 lower = [x.lower() for x in ["A", "B", "C"]]
 print(lower)
 
-
-
 #Output 1 - ['a', 'b', 'c']
-
-
-# Output 2 - ['A', 'B', 'C']
 
 upper = [x.upper() for x in lower]
 print(upper)
-
+# Output 2 - ['A', 'B', 'C']
 
 
 #6) Creating a list based on a condition
