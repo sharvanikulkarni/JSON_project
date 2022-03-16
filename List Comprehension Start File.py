@@ -33,8 +33,6 @@ for i in old_list:
         expression '''
 		
 		
-
-
 #Which corresponds to:
 
 #*result*  = [*transform*    *iteration*         *filter*     ]
@@ -43,7 +41,6 @@ for i in old_list:
 #classic way
 from ast import comprehension
 from hashlib import new
-
 
 old_list = [1,2,3,4,5]
 new_list = []
@@ -57,7 +54,6 @@ print(new_list)
 #1) creating a simple list of 10 numbers using Range()
 x = [i for i in range(10)]
 print(x)
-
 
 #list comprehension
 new_list = [i**2 for i in old_list]
@@ -103,11 +99,7 @@ print(upper)
 
 new_range = [i*i for i in range(5) if i%2==0]
 print(new_range)
-
 #Output - [0, 4, 16]
-
-
-
 
 # 7) Extracting numbers only from a string and putting it in a list
 
@@ -117,9 +109,6 @@ print(just_numbers)
 alpha = [i for i in string if i.isalpha()]
 print(alpha)
 # Output - ['1', '2', '3', '4', '5']
-
-
-
 
 #8
 ''' 
@@ -140,11 +129,7 @@ result = [i for i in fl if "line3" in i]
 result1 = [i.strip("\n") for i in fl if "line3" in i]
 print(result)
 print(result1)
-
-
 #Output: ['this is line3']
-
-
 
 #9) Using functions in list comprehension
 
@@ -158,30 +143,18 @@ print(double(10))
 
 # Answer - 20
 
-
 #We can easily use list comprehension on that function.
 
 output = [double(x) for x in range(10)]
 print(output)
-
-
 # Output - [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
-
 
 
 # 10) adding an IF condition to the above
 
 output = [double(x) for x in range(10) if x%2==0]
 print(output)
-
-
-
 # Output - [0, 4, 8, 12, 16]
-
-
-
-
-
 
 # 11) You can add more arguments (using multiple iterators and lists):
 

@@ -16,7 +16,6 @@ lons = []
 lats = []
 for eq in list_of_eqs:
     mag = eq['properties']['mag']
-    
     lon1 = eq['geometry']['coordinates'][0]
     lat1 = eq['geometry']['coordinates'][1]
     mags.append(mag)
